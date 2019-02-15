@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Demo
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list class="mine-header">
+        <button ion-item (click)="changeImg()">
+            <ion-avatar item-left>
+                <img [src]="user.ImgPath" />
+            </ion-avatar>
+            <div>拍照/相册
+            </div>
+        </button>
+    </ion-list>
+    <ion-list>
+        <button ion-item (click)="checkUpdate()" detail-none>
+            <ion-icon name="sync" item-left color="secondary"></ion-icon>
+            在线升级
+        </button>
+        <button ion-item (click)="touchTag()">
+            <ion-icon name="radio-outline" item-left color="primary"></ion-icon>
+            NFC测试
+        </button>
+    </ion-list>
+    <ion-list>
+        <button ion-item (click)="showModal()" >
+            自定义动画
+        </button>
+    </ion-list>
+</ion-content>
